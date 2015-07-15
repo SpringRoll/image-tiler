@@ -1,0 +1,31 @@
+{
+  "name": "image-tiler",
+  "version": "0.0.1",
+  "description": "Tiles a large image into smaller tiles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpringRoll/image-tiler"
+  },
+  "keywords": [
+    "image",
+    "tile",
+    "crop",
+    "png"
+  ],
+  "author": "mattbargar@cloudkid.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpringRoll/image-tiler/issues"
+  },
+  "homepage": "https://github.com/SpringRoll/image-tiler",
+  "dependencies": {
+    "easyimage": "^2.0.3",
+    "glob": "^5.0.14",
+    "optimist": "^0.6.1",
+    "zpad": "^0.5.0"
+  }
+}
