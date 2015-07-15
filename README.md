@@ -13,7 +13,7 @@ Take the `crystal_Zone3_Midground.png` file and create tiles at the default size
 ```
 ## Options
 | option     | format                                       | example | Default if omitted             |
-|:-----------|:---------------------------------------------|:-----------------------------------------|
+|:-----------|:---------------------------------------------|:--------|:-------------------------------|
 | in         | path to image to be cropped                  | ~/Desktop/crystal_Zone1_Background.png | |
 | out        | path to output folder                        | ~/Desktop/                             | |
 | width      | number (in pixels)                           | | 1024                                   |
