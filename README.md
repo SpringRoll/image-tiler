@@ -12,16 +12,17 @@ Take the `crystal_Zone3_Midground.png` file and create tiles at the default size
 ~/Sites/Porting/measurement-skillpack-frontend/assets/zone/crystal_Zone3_Midground.png --out ~/Sites/Porting/measurement-skillpack-frontend/deploy/assets/images/zones/ --overlapRow 0 --exportJSON --jsonSrcPrefix assets/images/zones/
 ```
 ## Options
-| option     | format                                       | example | Default if omitted             |
-|:-----------|:---------------------------------------------|:--------|:-------------------------------|
-| in         | path to image to be cropped                  | ~/Desktop/crystal_Zone1_Background.png | |
-| out        | path to output folder                        | ~/Desktop/                             | |
-| width      | number (in pixels)                           | | 1024                                   |
-| height     | number (in pixels)                           | | 1024                                   |
-| overlap    | number of pixels to overlap rows and columns | | 1                                      |
-| overlapCol | number of pixels to overlap columns only     | | falls back to `overlap`                |
-| overlapRow | number of pixels to overlap rows only        | | falls back to `overlap`                |
-| exportJSON | (existence)                                  | | false                                  |
+| option     | format                                       | example                                | Default if omitted        |
+|:-----------|:---------------------------------------------|:---------------------------------------|:--------------------------|
+| in         | path to image to be cropped                  | ~/Desktop/crystal_Zone1_Background.png |                           |
+| out        | path to output folder                        | ~/Desktop/                             |                           |
+| outBase    | common name to prepend before tile number    | bg1                                    | base name of in file name |
+| width      | number (in pixels)                           |                                        | 1024                      |
+| height     | number (in pixels)                           |                                        | 1024                      |
+| overlap    | number of pixels to overlap rows and columns |                                        | 1                         |
+| overlapCol | number of pixels to overlap columns only     |                                        | falls back to `overlap`   |
+| overlapRow | number of pixels to overlap rows only        |                                        | falls back to `overlap`   |
+| exportJSON | (existence)                                  |                                        | false                     |
 
 ## TODO
 * remove dependency on ImageMagick (investigate [png-crop](https://www.npmjs.com/package/png-crop))
