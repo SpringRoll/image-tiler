@@ -3,10 +3,12 @@ node module for tiling a large image into smaller tiles. It optionally generates
 ## Setup
 
 ```bash
-npm install```
+npm install
+```
 
 ## Example Usage
 Take the `crystal_Zone3_Midground.png` file and create tiles at the default size, overlapping columns by 1 px (default) and rows by 0 px, and generate JSON.
+
 ```bash
 ./index.js --in ~/Sites/Project/assets/zone/crystal_Zone3_Midground.png --out ~/Sites/Project/deploy/assets/images/zones/ --overlapRow 0 --exportJSON --jsonSrcPrefix assets/images/zones/
 ```
