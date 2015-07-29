@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Tiles a large image into smaller tiles",
   "main": "index.js",
+  "bin": {
+		"image-tiler": "index.js"
+	},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
