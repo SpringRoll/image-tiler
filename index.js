@@ -25,10 +25,10 @@ if ((myArgs.h) || (myArgs.help))
 var inFiles = untildify(myArgs.in);
 var tileWidth = myArgs.width || 1024;
 var tileHeight = myArgs.height || 1024;
-var overlap = myArgs.overlap || 1;
+var overlap = myArgs.hasOwnProperty("overlap") ? myArgs.overlap : 1;
 var outFolder = myArgs.out;
 var shouldPrintJSON = myArgs.hasOwnProperty("exportJSON");
-var jsonSrcPrefix = myArgs.jsonSrcPrefix || "assets/images/zones/";
+var jsonSrcPrefix = myArgs.jsonSrcPrefix || "";
 var overlapCol = myArgs.hasOwnProperty("overlapCol") ? myArgs.overlapCol : overlap; //we can overlap x and y separately
 var overlapRow = myArgs.hasOwnProperty("overlapRow") ? myArgs.overlapRow : overlap;
 // console.log("GLOB:", inFiles);
